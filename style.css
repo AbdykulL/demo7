@@ -3,6 +3,8 @@ header{
     justify-content: space-between;
     background-color: rgb(42, 41, 41);
     color: white ;
+    padding-left: 30px ;
+    padding-right: 30px ;
     
     
 }
@@ -17,10 +19,20 @@ body{
 .box1{
     display: flex ;
     flex-direction: column;
-    width: 120px ;
+    width: 150px ;
     border: 1px solid black;
     padding: 10px ;
     
+}
+button{
+background-color: green;
+border: none ;
+border-radius: 5px;
+padding: 5px ;
+color: white;
+}
+img{
+  height: 210px ;
 }
 .container1{
     display: flex ;
@@ -44,6 +56,7 @@ body{
     display: none;
     width: 30px ;
     height: 30px ;
+
 }
 .nav{
     display: flex;
@@ -51,28 +64,43 @@ body{
    
   }
   
+  .cart-box {
+    position: fixed;
+    right: 20px;
+    top: 80px;
+    background: white;
+    border: 1px solid gray;
+    padding: 10px;
+    width: 250px;
+  }
+  .p{
+    margin-top: -3px;
+    
+  }
 
 
 
 @media screen and (max-width: 450px) {
     .container1{
-        display: grid;
+        /* display: grid;
         grid-template-columns: 150px 150px ;
         grid-template-rows: 400px 400px 400px 400px ;
         gap:30px ;
-        justify-content: center ;
+        justify-content: center ; */
         
-        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
     
         
     }
    
     .container2{
-        display: grid;
-        grid-template-columns: 150px 150px ;
-        grid-template-rows: 400px 400px 400px 400px ;
-        gap:30px ;
-        justify-content: center ;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
         
     }
     .nav{
@@ -83,6 +111,7 @@ body{
       .burger{
         display: block;
         z-index: 2;
+        margin-top: 20px ;
       }
       header{
         justify-content: space-between;
@@ -94,8 +123,8 @@ body{
         background-color: rgb(17, 16, 16);
         width: 150px;
         position: absolute;
-        right: 0;
-        top:0;
+        right: 8px;
+        top: 10px;;
         gap:2px;
         padding-top:20px;
         padding-left:10px;
@@ -103,6 +132,9 @@ body{
       }
       .burger-active{
         content: url(Hamburger_icon.svg.png);
+      }
+      .box1{
+        padding: 10px ;
       }
 
 
