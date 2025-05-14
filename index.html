@@ -12,7 +12,7 @@
     <div class="nav ">
       <p>Home </p>
       <p>Browse</p>
-      <p class="cart">Cart</p>
+      <p onclick="toggleCart()" style="cursor:pointer;">Cart</p>
     </div>
     <img  class="burger" src="Hamburger_icon.svg.png" alt="">
   </header>
@@ -24,56 +24,56 @@
         <p style="font-weight: bold ;">1984</p>
         <p class="p" style="margin-top: -3px;">by Author 1 </p>
         <p class="p">$1.50</p>
-        <button class="bir">Rent </button>
+        <button onclick="addToCart('1984',1.5)" class="bir">Rent </button>
       </div>
       <div class="box1">
         <img src="assets/sample-books/book-hobbit.jpg" alt="">
         <p style="font-weight: bold ;">The Hobbit</p>
         <p class="p">by Author 2 </p>
         <p class="p">$2.00</p>
-        <button class="eki">Rent </button>
+        <button onclick="addToCart('The Hobbit',2)" class="eki">Rent </button>
       </div>
       <div class="box1">
         <img src="assets/sample-books/book-mockingbird.jpg" alt="">
         <p style="font-weight: bold ;">To Kill a Mockingbird</p>
         <p class="p">by Author 3</p>
         <p class="p">$2.50</p>
-        <button class="uw">Rent </button>
+        <button onclick="addToCart('To Kill a Mockingbird',2.5)" class="uw">Rent </button>
       </div>
       <div class="box1">
         <img src="assets/sample-books/book-pride.jpg" alt="">
         <p style="font-weight: bold ;">Pride and Prejudice</p>
         <p class="p"> by Author 4 </p>
         <p class="p">$3.00</p>
-        <button class="tort">Rent </button>
+        <button onclick="addToCart('Pride and Prejudice',3)" class="tort">Rent </button>
       </div>
       <div class="box1">
         <img src="assets/sample-books/book-mobydick.jpg" alt="">
         <p style="font-weight: bold ;">Mody-dick</p>
         <p class="p"> by Author 5</p>
         <p class="p">$1.00</p>
-        <button class="bes">Rent </button>
+        <button onclick="addToCart('Mody-dick',1)" class="bes">Rent </button>
       </div>
       <div class="box1">
         <img src="assets/sample-books/book-warpeace.jpg" alt="">
         <p style="font-weight: bold ;">War and Peace</p>
         <p class="p"> by Author 6</p>
         <p class="p">$1.50</p>
-        <button class="alti">Rent </button>
+        <button onclick="addToCart('War and Peace',1.5)" class="alti">Rent </button>
       </div>
       <div class="box1">
         <img src="assets/sample-books/book-gatsby.jpg" alt="">
         <p style="font-weight: bold ;">The Great Gatsby</p>
         <p class="p"> by Author 7</p>
         <p class="p">$2.00</p>
-        <button class="seven">Rent </button>
+        <button onclick="addToCart('The Great Gatsby',2)" class="seven">Rent </button>
       </div>
       <div class="box1">
         <img src="assets/sample-books/book-catcher.jpg" alt="">
         <p style="font-weight: bold ;">The Catcher in the Rye  </p>
         <p class="p"> by Author 8 </p>
         <p class="p">$2.50</p>
-        <button class="sekiz">Rent </button>
+        <button onclick="addToCart('The Catcher in the Rye',2.5)" class="sekiz">Rent </button>
       </div>
     </div>
     <div class="container2">
@@ -82,50 +82,51 @@
         <p style="font-weight: bold ;">Brave New world</p>
         <p class="p">by AUthor 9 </p>
         <p class="p">$1.50</p>
-        <button class="dokuz">Rent </button>
+        <button onclick="addToCart('Brave New world',1.5)" class="dokuz">Rent </button>
       </div>
       <div class="box1">
         <img src="assets/sample-books/book-janeeyre.jpg" alt="">
         <p style="font-weight: bold ;">Jane Eyre</p>
         <p class="p">by AUthor 10 </p>
         <p class="p">$1.50</p>
-        <button class="on">Rent </button>
+        <button onclick="addToCart('Jane Eyre',1.5)"  class="on">Rent </button>
       </div>
       <div class="box1">
         <img src="assets/sample-books/book-crime.jpg" alt="">
         <p style="font-weight: bold ;">Crime punishment  </p>
         <p class="p">by AUthor 11 </p>
         <p class="p">$1.50</p>
-        <button class="eleven">Rent </button>
+        <button onclick="addToCart('Crime punishment',1.5)" class="eleven">Rent </button>
       </div>
       <div class="box1">
         <img src="assets/sample-books/book-anna.jpg" alt="">
         <p style="font-weight: bold ;"> Anna Karenina</p>
         <p class="p">by AUthor 12</p>
         <p class="p">$1.50</p>
-        <button class="twelve">Rent </button>
+        <button onclick="addToCart('Anna Karenina',1.5)" class="twelve">Rent </button>
       </div>
       <div class="box1">
         <img src="assets/sample-books/book-alchemist.jpg" alt="">
         <p style="font-weight: bold ;"> alchemist</p>
         <p class="p">by AUthor 13 </p>
         <p class="p">$1.50</p>
-        <button class="onuw">Rent </button>
+        <button onclick="addToCart('alchemist',1.5)" class="onuw">Rent </button>
       </div>
       <div class="box1">
         <img src="assets/sample-books/book-lesmis.jpg" alt="">
         <p style="font-weight: bold ;">Les miserablesThe</p>
         <p class="p">by AUthor 14 </p>
         <p class="p">$1.50</p>
-        <button class="ontort">Rent </button>
+        <button onclick="addToCart('Les miserablesThe',1.5)" class="ontort">Rent </button>
       </div>
       <div class="box1">
         <img src="assets/sample-books/book-donquixote.jpg" alt="">
         <p style="font-weight: bold ;">Don Quixote</p>
         <p class="p">by AUthor15 </p>
         <p class="p">$1.50</p>
-        <button class="onbes">Rent </button>
+        <button onclick="addToCart('Don Quixote',1.5)" class="onbes">Rent </button>
       </div>
+      <div class="cart-box"></div>
       
     </div>
    
